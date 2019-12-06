@@ -1,0 +1,1 @@
+cmd_/media/satkg/rootfs/7.interrupts/timer.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /media/satkg/rootfs/7.interrupts/timer.ko /media/satkg/rootfs/7.interrupts/timer.o /media/satkg/rootfs/7.interrupts/timer.mod.o

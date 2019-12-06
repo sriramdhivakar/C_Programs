@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/x86/completion/completion.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sri/armworkout/x86/completion/completion.ko /home/sri/armworkout/x86/completion/completion.o /home/sri/armworkout/x86/completion/completion.mod.o

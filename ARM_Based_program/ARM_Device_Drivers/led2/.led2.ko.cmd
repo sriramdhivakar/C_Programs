@@ -1,0 +1,1 @@
+cmd_/home/sriram/drivers/ARM/bbb/led2/led2.ko := /home/sriram/bbb/bb-kernel/dl/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/sriram/drivers/ARM/bbb/led2/led2.ko /home/sriram/drivers/ARM/bbb/led2/led2.o /home/sriram/drivers/ARM/bbb/led2/led2.mod.o ;  true

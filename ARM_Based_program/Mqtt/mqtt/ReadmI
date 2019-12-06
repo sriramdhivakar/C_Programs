@@ -1,0 +1,34 @@
+===============================================================================================
+To compile a ./src/samples/MQTTAsync_publish.c
+setup the arm toolchain
+cd /home/vik/work/iot/mqtt/paho.mqtt.c_arm
+make CC=arm-cortexa8-linux-gnueabihf-gcc CFLAGS="-I/home/vik/work/iot/mqtt/openssl/openssl-1.0.0j_arm/include"
+% The executables will be available in
+cd /home/vik/work/iot/mqtt/paho.mqtt.c_arm/build/output/samples
+===============================================================================================
+
+>Tried to compile eg1.c for arm cortex-a8
+	# arm-cortexa8-linux-gnueabihf-gcc eg1.c -o eg1 -l paho-mqtt3c
+	- error to link with paho-mqtt3c library
+
+> generated paho-mqtt3c shared libraries for arm cortex-a8
+	make CC=arm-cortexa8-linux-gnueabihf-gcc CFLAGS="-I/home/vik/work/iot/mqtt/openssl/openssl-1.0.0j/include -L/home/vik/work/iot/mqtt/openssl/openssl-1.0.0j/libssl.so"
+
+> Tried to compile eg1.c for arm cortex-a8 
+	#arm-cortexa8-linux-gnueabihf-gcc -L /home/vik/work/iot/mqtt/paho.mqtt.c/build/output eg1.c -o eg1 -l paho-mqtt3c
+	- successful
+
+> Tried to execute eg1 in Wega board 
+	root@phyBOARD-WEGA-AM335x:~# ./eg1
+	./eg1: error while loading shared libraries: libpaho-mqtt3c.so.1: cannot open shared object file: No such file or directoy
+
+> Copied all the mqtt3c shared libraries complied for arm cortex-a8 to /lib of wega rfs
+	vik@phytec:~/work/iot/mqtt/paho.mqtt.c/build/output$ scp libpaho-mqtt3* root@192.168.1.45:~/paho
+	root@phyBOARD-WEGA-AM335x:~# cp paho/* /lib/
+
+	root@phyBOARD-WEGA-AM335x:~# ./eg1 
+	Waiting for publication of Hello World!
+	on topic vikram/mqtt_example1 for client with ClientID: ExampleClientPub
+	Message with token value 1 delivery confirmed
+	- successful
+

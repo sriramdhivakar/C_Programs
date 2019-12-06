@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/olimex/led/led.ko := arm-linux-gnueabi-ld -EL -r  -T /home/sri/Downloads/olimex/linux-sunxi/scripts/module-common.lds --build-id  -o /home/sri/armworkout/olimex/led/led.ko /home/sri/armworkout/olimex/led/led.o /home/sri/armworkout/olimex/led/led.mod.o

@@ -1,0 +1,3 @@
+gcc eg1.c  -l paho-mqtt3c
+arm-cortexa8-linux-gnueabihf-gcc eg1.c -o eg1 -l paho-mqtt3c
+#arm-cortexa8-linux-gnueabihf-gcc -L /home/vik/work/iot/mqtt/paho.mqtt.c/build/output eg1.c -o eg1 -l paho-mqtt3c

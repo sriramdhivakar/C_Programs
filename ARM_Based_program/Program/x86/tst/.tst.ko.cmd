@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/x86/tst/tst.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sri/armworkout/x86/tst/tst.ko /home/sri/armworkout/x86/tst/tst.o /home/sri/armworkout/x86/tst/tst.mod.o

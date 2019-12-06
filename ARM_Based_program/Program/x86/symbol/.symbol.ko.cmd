@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/x86/symbol/symbol.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sri/armworkout/x86/symbol/symbol.ko /home/sri/armworkout/x86/symbol/symbol.o /home/sri/armworkout/x86/symbol/symbol.mod.o

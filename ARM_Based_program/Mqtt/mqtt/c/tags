@@ -1,0 +1,115 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDRESS	eg.c	6;"	d	file:
+CLIENTID	eg.c	7;"	d	file:
+DLLExport	MQTTClient.h	25;"	d
+DLLExport	MQTTClient.h	28;"	d
+DLLImport	MQTTClient.h	24;"	d
+DLLImport	MQTTClient.h	27;"	d
+MQTTCLIENTPERSISTENCE_H	MQTTClientPersistence.h	18;"	d
+MQTTCLIENT_BAD_QOS	MQTTClient.h	55;"	d
+MQTTCLIENT_BAD_STRUCTURE	MQTTClient.h	53;"	d
+MQTTCLIENT_BAD_UTF8_STRING	MQTTClient.h	47;"	d
+MQTTCLIENT_DISCONNECTED	MQTTClient.h	43;"	d
+MQTTCLIENT_FAILURE	MQTTClient.h	39;"	d
+MQTTCLIENT_H	MQTTClient.h	21;"	d
+MQTTCLIENT_MAX_MESSAGES_INFLIGHT	MQTTClient.h	45;"	d
+MQTTCLIENT_NULL_PARAMETER	MQTTClient.h	49;"	d
+MQTTCLIENT_PERSISTENCE_DEFAULT	MQTTClientPersistence.h	21;"	d
+MQTTCLIENT_PERSISTENCE_ERROR	MQTTClientPersistence.h	27;"	d
+MQTTCLIENT_PERSISTENCE_NONE	MQTTClientPersistence.h	23;"	d
+MQTTCLIENT_PERSISTENCE_USER	MQTTClientPersistence.h	25;"	d
+MQTTCLIENT_SUCCESS	MQTTClient.h	37;"	d
+MQTTCLIENT_TOPICNAME_TRUNCATED	MQTTClient.h	51;"	d
+MQTTClient	MQTTClient.h	/^ typedef void* MQTTClient;$/;"	t
+MQTTClient_SSLOptions	MQTTClient.h	/^ } MQTTClient_SSLOptions;$/;"	t	typeref:struct:__anon3
+MQTTClient_SSLOptions_initializer	MQTTClient.h	126;"	d
+MQTTClient_connectOptions	MQTTClient.h	/^ } MQTTClient_connectOptions;$/;"	t	typeref:struct:__anon4
+MQTTClient_connectOptions_initializer	MQTTClient.h	152;"	d
+MQTTClient_connectionLost	MQTTClient.h	/^ typedef void MQTTClient_connectionLost(void* context, char* cause);$/;"	t
+MQTTClient_deliveryComplete	MQTTClient.h	/^ typedef void MQTTClient_deliveryComplete(void* context, MQTTClient_deliveryToken dt);$/;"	t
+MQTTClient_deliveryToken	MQTTClient.h	/^ typedef int MQTTClient_deliveryToken;$/;"	t
+MQTTClient_message	MQTTClient.h	/^ } MQTTClient_message;$/;"	t	typeref:struct:__anon1
+MQTTClient_messageArrived	MQTTClient.h	/^ typedef int MQTTClient_messageArrived(void* context, char* topicName, int topicLen, MQTTClient_message* message);$/;"	t
+MQTTClient_message_initializer	MQTTClient.h	81;"	d
+MQTTClient_nameValue	MQTTClient.h	/^ } MQTTClient_nameValue;$/;"	t	typeref:struct:__anon6
+MQTTClient_persistence	MQTTClientPersistence.h	/^ } MQTTClient_persistence;$/;"	t	typeref:struct:__anon7
+MQTTClient_token	MQTTClient.h	/^ typedef int MQTTClient_token;$/;"	t
+MQTTClient_willOptions	MQTTClient.h	/^ } MQTTClient_willOptions;$/;"	t	typeref:struct:__anon2
+MQTTClient_willOptions_initializer	MQTTClient.h	106;"	d
+MQTTVERSION_3_1	MQTTClient.h	59;"	d
+MQTTVERSION_3_1_1	MQTTClient.h	61;"	d
+MQTTVERSION_DEFAULT	MQTTClient.h	57;"	d
+MQTTVersion	MQTTClient.h	/^                 int MQTTVersion;     $/;"	m	struct:__anon4::__anon5
+MQTTVersion	MQTTClient.h	/^         int MQTTVersion;$/;"	m	struct:__anon4
+MQTT_BAD_SUBSCRIBE	MQTTClient.h	63;"	d
+PAYLOAD	eg.c	9;"	d	file:
+Persistence_clear	MQTTClientPersistence.h	/^ typedef int (*Persistence_clear)(void* handle);$/;"	t
+Persistence_close	MQTTClientPersistence.h	/^ typedef int (*Persistence_close)(void* handle); $/;"	t
+Persistence_containskey	MQTTClientPersistence.h	/^ typedef int (*Persistence_containskey)(void* handle, char* key);$/;"	t
+Persistence_get	MQTTClientPersistence.h	/^ typedef int (*Persistence_get)(void* handle, char* key, char** buffer, int* buflen);$/;"	t
+Persistence_keys	MQTTClientPersistence.h	/^ typedef int (*Persistence_keys)(void* handle, char*** keys, int* nkeys);$/;"	t
+Persistence_open	MQTTClientPersistence.h	/^ typedef int (*Persistence_open)(void** handle, char* clientID, char* serverURI, void* context);$/;"	t
+Persistence_put	MQTTClientPersistence.h	/^ typedef int (*Persistence_put)(void* handle, char* key, int bufcount, char* buffers[], int buflens[]);$/;"	t
+Persistence_remove	MQTTClientPersistence.h	/^ typedef int (*Persistence_remove)(void* handle, char* key);$/;"	t
+QOS	eg.c	10;"	d	file:
+TIMEOUT	eg.c	11;"	d	file:
+TOPIC	eg.c	8;"	d	file:
+cleansession	MQTTClient.h	/^         int cleansession;$/;"	m	struct:__anon4
+connectTimeout	MQTTClient.h	/^         int connectTimeout;$/;"	m	struct:__anon4
+connlost	eg.c	/^void connlost(void *context, char *cause)$/;"	f
+context	MQTTClientPersistence.h	/^         void* context;$/;"	m	struct:__anon7
+delivered	eg.c	/^void delivered(void *context, MQTTClient_deliveryToken dt)$/;"	f
+deliveredtoken	eg.c	/^volatile MQTTClient_deliveryToken deliveredtoken;$/;"	v
+dup	MQTTClient.h	/^         int dup;$/;"	m	struct:__anon1
+enableServerCertAuth	MQTTClient.h	/^     int enableServerCertAuth;$/;"	m	struct:__anon3
+enabledCipherSuites	MQTTClient.h	/^         char* enabledCipherSuites;    $/;"	m	struct:__anon3
+keepAliveInterval	MQTTClient.h	/^         int keepAliveInterval;$/;"	m	struct:__anon4
+keyStore	MQTTClient.h	/^         char* keyStore;$/;"	m	struct:__anon3
+main	eg.c	/^int main(int argc, char* argv[])$/;"	f
+message	MQTTClient.h	/^         char* message;$/;"	m	struct:__anon2
+msgarrvd	eg.c	/^int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *message)$/;"	f
+msgid	MQTTClient.h	/^         int msgid;$/;"	m	struct:__anon1
+name	MQTTClient.h	/^         const char* name;$/;"	m	struct:__anon6
+password	MQTTClient.h	/^         char* password;$/;"	m	struct:__anon4
+payload	MQTTClient.h	/^         void* payload;$/;"	m	struct:__anon1
+payloadlen	MQTTClient.h	/^         int payloadlen;$/;"	m	struct:__anon1
+pclear	MQTTClientPersistence.h	/^         Persistence_clear pclear;$/;"	m	struct:__anon7
+pclose	MQTTClientPersistence.h	/^         Persistence_close pclose;$/;"	m	struct:__anon7
+pcontainskey	MQTTClientPersistence.h	/^         Persistence_containskey pcontainskey;$/;"	m	struct:__anon7
+pget	MQTTClientPersistence.h	/^         Persistence_get pget;$/;"	m	struct:__anon7
+pkeys	MQTTClientPersistence.h	/^         Persistence_keys pkeys;$/;"	m	struct:__anon7
+popen	MQTTClientPersistence.h	/^         Persistence_open popen;$/;"	m	struct:__anon7
+pput	MQTTClientPersistence.h	/^         Persistence_put pput;$/;"	m	struct:__anon7
+premove	MQTTClientPersistence.h	/^         Persistence_remove premove;$/;"	m	struct:__anon7
+privateKey	MQTTClient.h	/^         char* privateKey;$/;"	m	struct:__anon3
+privateKeyPassword	MQTTClient.h	/^         char* privateKeyPassword;$/;"	m	struct:__anon3
+qos	MQTTClient.h	/^         int qos;$/;"	m	struct:__anon1
+qos	MQTTClient.h	/^         int qos;$/;"	m	struct:__anon2
+reliable	MQTTClient.h	/^         int reliable;           $/;"	m	struct:__anon4
+retained	MQTTClient.h	/^         int retained;$/;"	m	struct:__anon1
+retained	MQTTClient.h	/^         int retained;$/;"	m	struct:__anon2
+retryInterval	MQTTClient.h	/^         int retryInterval;$/;"	m	struct:__anon4
+returned	MQTTClient.h	/^         } returned;$/;"	m	struct:__anon4	typeref:struct:__anon4::__anon5
+serverURI	MQTTClient.h	/^                 char* serverURI;     $/;"	m	struct:__anon4::__anon5
+serverURIcount	MQTTClient.h	/^         int serverURIcount;$/;"	m	struct:__anon4
+serverURIs	MQTTClient.h	/^         char** serverURIs;$/;"	m	struct:__anon4
+sessionPresent	MQTTClient.h	/^                 int sessionPresent;  $/;"	m	struct:__anon4::__anon5
+ssl	MQTTClient.h	/^         MQTTClient_SSLOptions* ssl;$/;"	m	struct:__anon4
+struct_id	MQTTClient.h	/^         char struct_id[4];$/;"	m	struct:__anon1
+struct_id	MQTTClient.h	/^         char struct_id[4];$/;"	m	struct:__anon2
+struct_id	MQTTClient.h	/^         char struct_id[4];$/;"	m	struct:__anon3
+struct_id	MQTTClient.h	/^         char struct_id[4];$/;"	m	struct:__anon4
+struct_version	MQTTClient.h	/^         int struct_version;     $/;"	m	struct:__anon3
+struct_version	MQTTClient.h	/^         int struct_version;$/;"	m	struct:__anon1
+struct_version	MQTTClient.h	/^         int struct_version;$/;"	m	struct:__anon2
+struct_version	MQTTClient.h	/^         int struct_version;$/;"	m	struct:__anon4
+topicName	MQTTClient.h	/^         char* topicName;$/;"	m	struct:__anon2
+trustStore	MQTTClient.h	/^         char* trustStore;$/;"	m	struct:__anon3
+username	MQTTClient.h	/^         char* username; $/;"	m	struct:__anon4
+value	MQTTClient.h	/^         const char* value;$/;"	m	struct:__anon6
+will	MQTTClient.h	/^         MQTTClient_willOptions* will;$/;"	m	struct:__anon4
