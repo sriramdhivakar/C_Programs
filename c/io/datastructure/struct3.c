@@ -16,7 +16,7 @@ int main(void){
 	struct student sriram[3] = {
 		{"sriram",100,29},
 		{"angu",101,19},
-		{"angu",101,19}
+		{"Bharati",102,39}
 	};
 
 	printf("%s,%d,%d\n",sriram[0].name,sriram[0].roll_no,sriram[0].age);
