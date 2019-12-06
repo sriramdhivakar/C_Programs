@@ -1,0 +1,1 @@
+cmd_/home/shihyu/github/linux_kernel_driver/example/LDDP_JP/TW-samples/chap6/ioctl/sample.o := ld -m elf_x86_64   -r -o /home/shihyu/github/linux_kernel_driver/example/LDDP_JP/TW-samples/chap6/ioctl/sample.o /home/shihyu/github/linux_kernel_driver/example/LDDP_JP/TW-samples/chap6/ioctl/devone.o 

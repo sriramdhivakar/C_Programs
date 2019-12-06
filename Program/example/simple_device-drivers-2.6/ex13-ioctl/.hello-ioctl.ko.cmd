@@ -1,0 +1,1 @@
+cmd_/home/shihyu/GitTutorial/device-drivers-2.6/ex13-ioctl/hello-ioctl.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/shihyu/GitTutorial/device-drivers-2.6/ex13-ioctl/hello-ioctl.ko /home/shihyu/GitTutorial/device-drivers-2.6/ex13-ioctl/hello-ioctl.o /home/shihyu/GitTutorial/device-drivers-2.6/ex13-ioctl/hello-ioctl.mod.o

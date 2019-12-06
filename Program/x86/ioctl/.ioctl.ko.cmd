@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/x86/ioctl/ioctl.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sri/armworkout/x86/ioctl/ioctl.ko /home/sri/armworkout/x86/ioctl/ioctl.o /home/sri/armworkout/x86/ioctl/ioctl.mod.o

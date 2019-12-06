@@ -1,0 +1,1 @@
+cmd_/opt/Enjoylinux/code/book2/2-4-2/mylist.ko := arm-linux-ld -EL -r  -T /opt/Enjoylinux/code/book2/2-3-1/GQ2440/linux-2.6.32.2/scripts/module-common.lds --build-id -o /opt/Enjoylinux/code/book2/2-4-2/mylist.ko /opt/Enjoylinux/code/book2/2-4-2/mylist.o /opt/Enjoylinux/code/book2/2-4-2/mylist.mod.o

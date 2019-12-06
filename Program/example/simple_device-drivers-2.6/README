@@ -1,0 +1,35 @@
+------
+README
+------
+
+Greetings!
+
+The directory contains simple Linux device driver code examples, for character device operations. 
+
+The device drivers are for 2.6 kernels. Current version is 1.1.
+
+The code examples include:
+
+	ex1-hello-world/
+	ex2-init-exit/
+	ex3-doc-license/
+	ex4-param/
+	ex5-multi-file/
+	ex6-char-register/
+	ex7-char-dev-register/
+	ex8-char-dev-register-dynamic/
+	ex9-write/
+	ex10-read/
+	ex11-debug/
+	ex12-proc/
+	ex13-ioctl
+
+The code examples from Alessandro Rubini and Jonathan Corbett's "Linux Device Drivers" were too long with lot of ifdefs, and it was difficult for me to follow them.
+
+Hence I decided to modify them, and write simple application code wherever needed. The examples don't cover all the aspects of Linux device drivers, but, are meant for newbies who are entering into the field of device driver programming.
+
+Enjoy the learning experience!
+
+--
+Shakthi Kannan <shaks@shakthimaan.com>
+http://www.shakthimaan.com

@@ -1,0 +1,12 @@
+ChangeLog
+=========
+
+2007-12-24 Shakthi Kannan <shakthimaan@gmail.com>
+
+	* ex4-param/hello.c:
+	Removed array example.
+	
+2007-11-29 Shakthi Kannan <shakthimaan@gmail.com>
+
+	* Makefile:
+	Top-level Makefile to build all examples.

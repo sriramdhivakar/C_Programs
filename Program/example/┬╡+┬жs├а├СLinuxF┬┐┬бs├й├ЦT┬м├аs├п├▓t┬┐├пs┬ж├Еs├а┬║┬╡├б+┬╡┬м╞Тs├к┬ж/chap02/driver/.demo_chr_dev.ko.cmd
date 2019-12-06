@@ -1,0 +1,1 @@
+cmd_/home/dennis/book_sourcecode/chap02/driver/demo_chr_dev.ko := ld -r -m elf_x86_64 -T /home/dennis/Linux/linux-3.1.6/scripts/module-common.lds --build-id  -o /home/dennis/book_sourcecode/chap02/driver/demo_chr_dev.ko /home/dennis/book_sourcecode/chap02/driver/demo_chr_dev.o /home/dennis/book_sourcecode/chap02/driver/demo_chr_dev.mod.o

@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/bt/btdrv/lxl/device/device.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds --build-id -o /mnt/hgfs/bt/btdrv/lxl/device/device.ko /mnt/hgfs/bt/btdrv/lxl/device/device.o /mnt/hgfs/bt/btdrv/lxl/device/device.mod.o

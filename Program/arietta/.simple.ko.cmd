@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/arietta/simple.ko := arm-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/sri/armworkout/arietta/simple.ko /home/sri/armworkout/arietta/simple.o /home/sri/armworkout/arietta/simple.mod.o
