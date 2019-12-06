@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include <malloc.h>
+
+struct node {
+	struct node *prev;
+	int info;
+	struct node *next;
+}*root;
+
+void creat_node(int value)
+{
+	struct node *tmp;
+
+	tmp = (struct node*)malloc(sizeof(struct node));
+	tmp->prev = NULL;
+	tmp->info = value;
+	tmp->next = NULL;
+
+	if(root == NULL)
+	{
+		root = tmp;
+		root->prev = root;
+		root->next = root;
+	}
+}
+
+void addatbegin(int value)
+{
+	struct node *tmp;
+
+	tmp = (struct node*)malloc(sizeof(struct node));
+	tmp->prev = NULL;
+	tmp->info = value;
+	tmp->next = NULL;
+
+	tmp->next = root;
+	tmp->prev = root->prev;
+	root->prev = tmp;
+	root->next = tmp;
+	root = tmp;
+}
+
+void addinbetween(int pos,int value)
+{
+	struct node *q,*tmp;
+
+	tmp = (struct node*)malloc(sizeof(struct node));
+	tmp->next = NULL;
+	tmp->info = value;
+	tmp->prev = NULL;
+
+	int i;
+
+	q = root;
+
+	for(i=0;i<pos-1;i++)
+	{
+		q = q->next;
+	}
+	
+	q->next->prev = tmp;
+	tmp->next = q->next;
+	tmp->prev = q;
+	q->next = tmp;
+}
+
+void addatend(int value)
+{
+	struct node *tmp,*q;
+
+	tmp = (struct node*)malloc(sizeof(struct node));
+	tmp->prev = NULL;
+	tmp->info = value;
+	tmp->next = NULL;
+
+	q = root;
+
+	while(q->next != root)
+	{
+		q = q->next;
+	}
+	q->next = tmp;
+	tmp->prev = q;
+	tmp->next = root;
+}
+
+void delete(int value)
+{
+	struct node *q,*tmp;
+	
+	if(root->info == value)
+	{
+		tmp = root;
+		//root->prev = NULL;
+		root = root->next;
+		root->prev = tmp->prev;
+		while(tmp->next != tmp)
+		{
+			tmp = tmp->next;
+		}
+		tmp->next = root;
+	}
+
+}
+
+void display()
+{
+	struct node *q;
+
+	if(root == NULL)
+		printf("List is Empty\n");
+
+	q = root;
+
+	while(q->next != root)
+	{
+		printf("List is %d\n",q->info);
+		q = q->next;
+	}
+	printf("List is %d\n",q->info);
+
+}
+
+int main(void)
+{
+	system("clear");
+	creat_node(3);
+	addatbegin(1);
+	addinbetween(1,2);
+	addatend(4);
+	addatend(5);
+	addatend(6);
+	addatend(7);
+	delete(1);
+	display();
+	return 0;
+}
