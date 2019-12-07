@@ -1,0 +1,1 @@
+cmd_/home/sriram/Downloads/Program/x86/auto/auto.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/sriram/Downloads/Program/x86/auto/auto.ko /home/sriram/Downloads/Program/x86/auto/auto.o /home/sriram/Downloads/Program/x86/auto/auto.mod.o ;  true

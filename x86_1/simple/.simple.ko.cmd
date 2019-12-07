@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/x86/simple/simple.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sri/armworkout/x86/simple/simple.ko /home/sri/armworkout/x86/simple/simple.o /home/sri/armworkout/x86/simple/simple.mod.o

@@ -1,0 +1,1 @@
+cmd_/home/sri/armworkout/x86/rtc/rtc.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/sri/armworkout/x86/rtc/rtc.ko /home/sri/armworkout/x86/rtc/rtc.o /home/sri/armworkout/x86/rtc/rtc.mod.o
