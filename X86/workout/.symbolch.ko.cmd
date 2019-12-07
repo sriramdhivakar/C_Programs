@@ -1,0 +1,1 @@
+cmd_/home/sriram/drivers/workout/symbolch.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/sriram/drivers/workout/symbolch.ko /home/sriram/drivers/workout/symbolch.o /home/sriram/drivers/workout/symbolch.mod.o ;  true

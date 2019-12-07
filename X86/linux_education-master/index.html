@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+  <title>BLEP: BeagleBoard.org Linux Education Project</title>
+
+<!-- style sheet links -->
+<link rel="stylesheet" href="s6/blep/blep.css"     media="projection" id="styleProjection">
+<link rel="stylesheet" href="s6/shared/screen.css" media="screen"     id="styleScreen">
+<link rel="stylesheet" href="s6/shared/print.css"  media="print">
+
+<!-- S6 JS -->
+<script src="s6/shared/jquery.js"></script>
+<script src="s6/shared/jquery.slideshow.js"></script>
+<script>
+  $(document).ready( function() {
+    Slideshow.transition = transitionScrollUp;
+    Slideshow.init( { mode: 'autoplay' } );
+  } );
+</script>
+
+<!-- Better Browser Banner for Microsoft Internet Explorer (IE) -->
+<!--[if IE]>
+<script src="s6/shared/jquery.microsoft.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div class="layout">
+  <div id="header"></div>
+  <div id="footer">
+    <h1>BLEP Linux Education Project</h1>
+    <h2><a href="http://beagleboard.org/linux_education">BeagleBoard.org/Linux_Education</a></h2>
+  </div>
+</div>
+
+<div class="presentation">
+
+  <div class='slide cover'>
+    <h1 class='fullscreen'>BLEP: BeagleBoard.org Linux Education Project</h1>
+    <ul>
+    <li>This presentation is just a place holder to be filled in.  I want all of the slides to be an interactive HTML session that can be displayed anywhere, but will add additional interactive functionality when hosted on a BeagleBoard.  Local hosting would also be supported.  Ultimately, this presentation should be served up using the Matrix application.</li>
+    <li>At ESC Chicago 2011, I gave a presentation that I want to use as a starting point: <a href="presentations/Learning_Linux_Tops_Down.pdf">Learning Linux Tops Down.pdf</a></li>
+    </ul>
+  </div>
+
+</div> <!-- presentation -->
+</body>
+</html>

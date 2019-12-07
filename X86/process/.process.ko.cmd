@@ -1,0 +1,1 @@
+cmd_/home/sriram/drivers/process/process.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/sriram/drivers/process/process.ko /home/sriram/drivers/process/process.o /home/sriram/drivers/process/process.mod.o ;  true

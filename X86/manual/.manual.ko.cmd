@@ -1,0 +1,1 @@
+cmd_/home/sriram/drivers/manual/manual.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/sriram/drivers/manual/manual.ko /home/sriram/drivers/manual/manual.o /home/sriram/drivers/manual/manual.mod.o ;  true

@@ -1,0 +1,1 @@
+cmd_/home/sriram/drivers/variable/variable.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/sriram/drivers/variable/variable.ko /home/sriram/drivers/variable/variable.o /home/sriram/drivers/variable/variable.mod.o ;  true
